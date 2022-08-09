@@ -1,0 +1,392 @@
+body {
+  position: relative;
+  width: fill;
+  height: 850px;
+  font-family: sans-serif;
+  background: #e8f0ff;
+  overflow: auto;
+}
+
+h1 {
+  border-bottom: 1pt solid black;
+  margin: 30px;
+}
+
+.navbar {
+  width: auto;
+  height: 50px;
+  background: rgb(9, 30, 68);
+  border-radius: 2px;
+}
+
+.navbar-right {
+  float: right;
+  width: 290px;
+  padding-right: 10px;
+}
+
+.navbar-left {
+  float: left;
+  width: 290px;
+  padding-top: 10pt;
+  padding-left: 10pt;
+  font-family: sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.navbar-left a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar {
+  width: auto;
+  height: 50px;
+  background: rgb(9, 30, 68);
+  border-radius: 2px;
+}
+
+.navbar ul {
+  float: left;
+  margin-top: 5px;
+  padding: 0;
+  width: 300px;
+  margin-right: 0px;
+}
+
+.navbar li {
+  float: right;
+  list-style: none;
+  margin: 0 20% 0 0;
+}
+
+.navbar button {
+  display: block;
+  height: 5px;
+  margin-top: 5px;
+  border: 1px solid blue;
+  font-weight: bold;
+  color: white;
+  height: 30px;
+  width: 90px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: blue;
+  cursor: pointer;
+  font-size: 24pt;
+}
+
+.navbar li a,
+.navbar li a:link {
+  text-decoration: none;
+  width: 0px;
+  height: 30px;
+}
+
+.navbar li a button:hover {
+  background: white;
+  color: #444;
+}
+
+.item1 {
+  grid-area: menu;
+  width: auto;
+  height: 25px;
+  margin: 20px -150px 20px 100px;
+  background: white;
+  border: none;
+  box-sizing: content-box;
+  border-radius: 20px;
+}
+
+.item1 .detail {
+  text-align: center;
+  font-size: 14pt;
+}
+
+/* .item1 .detail {
+  text-align: center;
+  font-size: 14pt;
+  margin-left: 30%;
+  font-weight: bold;
+} */
+
+.item2 {
+  grid-area: right;
+}
+
+.item2 button {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 20pt;
+  border-radius: 20pt;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "menu menu right";
+  grid-gap: 0px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.container {
+  width: auto;
+  height: 800px;
+  top: 140px;
+  background: white;
+  border: 1px solid #091e44;
+  box-sizing: border-box;
+  border-radius: 10px;
+  z-index: 5;
+}
+.kolom {
+  position: relative;
+  top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
+  height: 400px;
+  background-color: white;
+  border: 0px solid rgba(0, 0, 0, 0.288);
+  align-self: center;
+  z-index: 4;
+}
+.metode {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  top: 25px;
+  background: #b5ceff;
+  border-radius: 0px 90px 0px 0px;
+  display: inline-block;
+}
+
+h2 {
+  margin: 10px 10px;
+  font-size: 20px;
+}
+.id {
+  position: absolute;
+  height: 80px;
+  width: 38%;
+  box-sizing: border-box;
+  border: 0px solid black;
+  background-color: #e8f0ff;
+  border-radius: 5px;
+  z-index: 2;
+  left: 0px;
+  top: 75px;
+  padding: 10pt;
+}
+
+.detail_harga {
+  position: absolute;
+  right: 0px;
+  top: 75px;
+  width: 60%;
+  height: 80px;
+  background-color: #e8f0ff;
+  box-sizing: border-box;
+  border: 0px solid black;
+  border-radius: 5px;
+  padding: 10pt;
+}
+
+.harga {
+  position: absolute;
+  margin-bottom: 5px;
+  top: 0px;
+  left: 30px;
+}
+
+.total {
+  position: relative;
+  top: 15px;
+  left: 17px;
+}
+
+.virtual {
+  position: absolute;
+  top: 165px;
+  left: 0px;
+
+  height: 250px;
+  width: 100%;
+  background-color: #e8f0ff;
+  /* box-sizing: border-box; */
+  border: 0px solid black;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.virtual_content {
+  display: grid;
+  left: 2.5%;
+  right: 2.5%;
+  position: relative;
+  width: 95%;
+  height: 250px;
+
+  z-index: 2;
+}
+
+.virtual_acc {
+  border-bottom: 1.5pt solid black;
+  margin-top: 5px;
+  width: 100%;
+  height: fit-content;
+}
+
+.virtual_acc h1 {
+  margin: 5px 0px;
+  padding: 2px;
+  font-weight: 150;
+  border: 0px;
+}
+
+.virtual_acc small {
+  color: grey;
+  margin-left: 5px;
+}
+
+.BCA {
+  border-bottom: 1.5pt solid black;
+  margin-top: 15px;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 80px;
+}
+
+.BRI {
+  border-bottom: 1.5pt solid black;
+  margin-top: 5px;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 145px;
+}
+
+.virtual span {
+  margin-left: 5px;
+  float: inline-end;
+  cursor: pointer;
+}
+
+span .choose {
+  float: right;
+}
+
+.choose img {
+  outline-color: none;
+  background-image: #b5ceff;
+}
+
+.submit {
+  width: 100%;
+  left: 30px;
+  right: 30px;
+}
+
+.submit button {
+  width: 250px;
+  height: 40px;
+  padding: 1px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff9900;
+  border: none;
+  margin-left: 68%;
+}
+
+.BCA .menu-bca,
+.BRI .menu-bri {
+  position: absolute;
+  top: 80px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #fff;
+  width: 100%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0, 1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.BCA .menu-bca.active,
+.BRI .menu-bri.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.BCA .menu-bca::before,
+.BRI .menu-bri::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.BCA .menu-bca h4,
+.BRI .menu-bri h4 {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  padding: 2px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.BCA .menu-bca p,
+.BRI .menu-bri p {
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 400;
+}
+
+.BCA .menu-bca ul li,
+.BRI .menu-bri ul li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+/* .BCA .menu-bca ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover a {
+  color: #ff5d94;
+} */
