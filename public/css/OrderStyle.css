@@ -1,0 +1,218 @@
+body {
+  position: relative;
+  width: fill;
+  height: 600px;
+  font-family: sans-serif;
+  background: #e8f0ff;
+  overflow: auto;
+}
+
+h1 {
+  border-bottom: 1pt solid black;
+  margin: 30px;
+}
+.Swing a:link, a:visited {
+  background-color: #ff9900;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ a:hover, a:active {
+  background-color: rgb(9, 30, 68);
+}
+
+.navbar {
+  width: auto;
+  height: 50px;
+  background: rgb(9, 30, 68);
+  border-radius: 2px;
+}
+
+.navbar-right {
+  float: right;
+  width: 290px;
+  padding-right: 10px;
+}
+
+.navbar-left {
+  float: left;
+  width: 290px;
+  padding-top: 10pt;
+  padding-left: 10pt;
+  font-family: sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.navbar {
+  width: auto;
+  height: 50px;
+  background: rgb(9, 30, 68);
+  border-radius: 2px;
+}
+
+.navbar ul {
+  float: left;
+  margin-top: 5px;
+  padding: 0;
+  width: 300px;
+  margin-right: 0px;
+}
+
+.navbar li {
+  float: right;
+  list-style: none;
+  margin: 0 20% 0 0;
+}
+
+.navbar button {
+  display: block;
+  height: 5px;
+  margin-top: 5px;
+  border: 1px solid blue;
+  font-weight: bold;
+  color: white;
+  height: 30px;
+  width: 90px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: blue;
+  cursor: pointer;
+  font-size: 24pt;
+}
+
+.navbar li a,
+.navbar li a:link {
+  text-decoration: none;
+  width: 0px;
+  height: 30px;
+}
+
+.navbar li a button:hover {
+  background: white;
+  color: #444;
+}
+
+.item1 {
+  grid-area: menu;
+  width: auto;
+  height: 30px;
+  margin: 20px -150px 20px 100px;
+  background: white;
+  border: none;
+  box-sizing: content-box;
+  border-radius: 20px;
+}
+
+.item1 .detail {
+  text-align: center;
+  font-size: 14pt;
+}
+
+.item2 {
+  grid-area: right;
+  float: right;
+}
+
+.item2 a {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 18px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 50pt;
+  border-radius: 20pt;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "menu menu right";
+  grid-gap: 0px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.container {
+  width: auto;
+  height: auto;
+  top: 1600px;
+  background: rgba(255, 255, 255, 0.77);
+  border: 1px solid #091e44;
+  box-sizing: border-box;
+}
+
+.container .card-penerbangan {
+  width: 80%;
+  margin: 20pt 0 20pt 10%;
+  padding: 2%;
+  border: 1pt solid gray;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    "Maskapai Maskapai Maskapai Maskapai Maskapai"
+    "img depart details arrival price"
+    "none none none none tombol";
+  grid-gap: 0px;
+}
+.kol6 {
+  grid-area: Maskapai;
+}
+.kol1 {
+  grid-area: img;
+  border: 1pt solid white;
+}
+
+.kol2 {
+  grid-area: depart;
+  font-size: 14pt;
+}
+
+.kol3 {
+  grid-area: details;
+  padding-right: 30pt;
+}
+
+.kol4 {
+  grid-area: arrival;
+  font-size: 14pt;
+}
+.kol5 {
+  grid-area: price;
+  font-size: 14pt;
+  margin-top: 10pt;
+}
+form{
+  grid-area: tombol;
+}
+form .kol7 {
+  grid-area: tombol;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  padding: 8px 100px;
+  border-radius: 20px;
+  text-align: right;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+.bold-blue {
+  font-weight: bold;
+  color: blue;
+}
